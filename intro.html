@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background-color: #ffd9e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ff66b2;
+        }
+
+        #nameInput {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #ff66b2;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #submitBtn,#nosubmitBtn {
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #hint {
+            color: #ff66b2;
+            margin-top: 10px;
+        }
+        button{
+            display: inline-block;
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+        #nosubmitbutton{
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Helloooo </h1>
+        <div class="button">
+            <button type="submit" id="submitBtn" onclick="navigateToAnotherPage()">Hii</button>
+            <button type="submit" id="nosubmitBtn" onclick="handleButtonClick()">no</button>
+        </div>
+    </div>
+    <script>
+        var clickCount = 0;
+      
+        function handleButtonClick() {
+          clickCount++;
+      
+          var button = document.getElementById('nosubmitBtn');
+      
+          if (clickCount === 3) {
+      button.innerText = 'Just';
+    } 
+    else if (clickCount === 6) {
+        button.innerText = "Fine, I'm disappearing";
+    }
+        else if (clickCount >= 7) {
+      button.style.opacity = 0;
+      setTimeout(function() {
+      }, 1000); // Change text after the button fades out
+      setTimeout(function() {
+        button.style.display = 'none';
+      }, 2000); // Hide the button after the text change
+        }
+    }
+    function navigateToAnotherPage() {
+            // Replace 'another-page.html' with the URL of the page you want to navigate to
+            window.location.href = 'disclamer.html';
+        }
+      </script>
+      
+</body>
+</html>

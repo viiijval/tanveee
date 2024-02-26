@@ -1,0 +1,230 @@
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+    text-align: center;
+    height:1400px;
+    
+}
+
+#message {
+	position: absolute;
+	right: -130px;
+	top:  400px;
+	color: #87fff1;	
+}
+
+p {
+  display: inline-block;	
+  margin-left: 10px;
+}
+
+#arrow{
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #87fff1;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #87fff1;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#container {
+	position: relative;
+    padding-bottom: 36px;
+    width: 500px;
+    margin: auto;
+}
+
+.bulb {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#chain_wrap {
+	position: absolute;
+	top: -200px;
+	right: 0;
+	width: 20px;
+	height: 800px
+
+}
+
+.chain {
+	cursor: pointer;
+    margin-left: 300px;
+}
+
+#screen {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;;
+}
+
+.on{
+	background-color: #fffad3;
+    
+
+}
+
+
+.off {
+	background-color: black;
+}
+
+#links_container {
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#links_container a {
+	text-decoration: none;
+	margin: 0 5px;
+	color: #87fff1;
+}
+
+#links_container a:visited {
+	color: #87fff1;
+}
+
+#links_container a:hover {
+	color: #00c2ab;
+}
+.madeit{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.birthdaytext{
+    font-family: "Silkscreen", sans-serif;
+    font-size: xx-large;
+    color:#00c2ab;
+}
+.birthdaytext2{
+    display: block;
+    font-family: "Silkscreen", sans-serif;
+    font-size: large;
+
+    color:#00c2ab;
+}
+.birthdaytext3{
+    font-family: "Silkscreen", sans-serif;
+    font-size: medium;
+
+    color:#89dbd1;
+    display: block;
+}
+button{
+    text-align: left;
+    align-items: left;
+    padding: 10px 20px;
+    margin-left: 200px;
+            background-color: #8266ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+}
+#targetDiv{
+    display: none;
+    position: relative;
+            width: 500px;
+            height: 500px;  
+            left: 500px;
+    
+}
+#blowButton{
+    display: none;
+}
+.cake{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+}
+#fire_on{
+    opacity: 1;
+}
+
+.blowbtn{
+    text-decoration: none; 
+    display: inline-block;
+            border: none; 
+            margin-left: 300px;
+            padding: 12px 40px; 
+            font-size: 16px; 
+            background-color: rgb(226, 226, 201); 
+            color: #15363a; 
+            border-radius: 5px; 
+            box-shadow: 7px 6px 28px 1px rgba(111, 111, 111, 0.24); 
+            cursor: pointer; 
+            outline: none; 
+            transition: 0.2s all;
+}
+.blowbtn:active{
+    transform: scale(0.98); 
+            /* Scaling button to 0.98 to its original size */ 
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+            /* Lowering the shadow */ 
+}
+.target{
+    display: inline;
+}
+.confetti{
+    cursor: pointer;
+            border: 1px solid #e7eff5;
+            background-color: transparent;
+            color: #3498db;
+            margin-left: 100px;
+            transition: all 280ms;
+}
+.confetti:hover{
+    opacity: .8;
+
+}
+.confetti:active{
+    scale: 1.2;
+}
+form {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, output {
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+.space{
+    height:200px
+}
+.meow{
+    margin-left: -200px;
+}

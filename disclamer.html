@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffd9e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ff66b2;
+        }
+        Button {
+margin: 50px;
+padding: 10px 20px;
+background-color: #d588e9;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+#dont{
+    background-color: #ff0d0d46;
+    margin-left: 1000px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>HIII TANVEEE</h1>
+        <p>PLEASE dont show this to anyone (please nigga)
+        </p>
+        <p>
+         use LAPTOP to view this, coz i suck at making it support on mobile flexbox.
+         some buttons are fun to play, no wrong buttons, i'll make you click the right one anyways so have fun !!!
+        </p>
+        <p>actually wanted to make this for a while, made for my bro an hour ago and its currently 0332, so sleepy so forgive this lazy website. </p>
+        <p> AGAIN, DONT SHOW THIS TO ANYONE OR ILL KILLYOU</p>
+        <p>update : making this website was hellla fun</p>
+        <p> next page is a puzzle, one after that too, who knows</p>
+        <button onclick="navigateToAnotherPage()">Go to next page?</button>
+        <button id="dont" onclick="playClickSound()">dont click</button>
+        <audio id="clickSound" src="footage/airhorn.mp3"></audio>
+    </div>
+    <script>
+    function navigateToAnotherPage() {
+        // Replace 'another-page.html' with the URL of the page you want to navigate to
+        window.location.href = 'logic.html';
+    }
+    function playClickSound() {
+    var clickSound = document.getElementById('clickSound');
+    clickSound.play();
+  }
+  </script>
+</body>
+</html>

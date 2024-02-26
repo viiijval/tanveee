@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+<link href="styles/logic.css" rel="stylesheet">
+    <title>STUPID</title>
+</head>
+<body>
+    <div id="container">
+        <h1>GUESSING GAME </h1>
+        <p> Which logic gate represents us the most?</p>
+     <div id="images">
+         <img src="footage/logic00.jpg"  class="logic" >
+         <img src="footage/logic01.jpg"  class="logic" >
+         <img src="footage/logic02.jpg"  class="logic" >
+     </div>
+     <div id="btns">
+        <button id="btn" class="abc" onclick="handleButtonClick(1)">A</button>
+        <button id="btn" class="abc" onclick="handleButtonClick(2)">B</button>
+        <button id="btn" class="abc" onclick="handleButtonClick(3)">C</button>
+     </div>
+     <div id="hiddenDiv">
+        <p class="statement">Wronggg, the correct answer is we don't share any logic</p>
+        <p>Go to next page?</p>
+        <div id="gobtn">
+        <button class="yessir" onclick="navigateToAnotherPage()">yessirr!</button>
+        <button id="changeTextButton" class="yessir" onclick="changeButtonText()">nah im tired.</button>
+    </div> 
+    </div>
+    </div>
+    <script>
+    function navigateToAnotherPage() {
+        // Replace 'another-page.html' with the URL of the page you want to navigate to
+        window.location.href = 'birthday.html';let buttonClickCount = 0;
+    }
+
+        let clickedButtons = [];
+
+      function handleButtonClick(buttonNumber) {
+     // Check if the button has been clicked before
+     if (!clickedButtons.includes(buttonNumber)) {
+        // Add button to the clicked list
+        clickedButtons.push(buttonNumber);
+
+        // Show "Incorrect" text
+        alert("Incorrect");
+
+        // Check if all buttons have been clicked at least once
+        if (clickedButtons.length === 3) {
+            // Show hidden div
+            hiddenDiv.style.opacity = '1';
+            document.getElementById('hiddenDiv').style.display = 'block';
+        }
+    }
+}
+let clickCount = 0;
+
+    function changeButtonText() {
+        clickCount++;
+
+        // Get the button element
+        let button = document.getElementById('changeTextButton');
+
+        // Change the inner text on the first click and keep it permanent for subsequent clicks
+        if (clickCount >= 1) {
+            button.innerHTML = 'click yessir anyway.';
+        }
+    }
+    
+  </script>
+</body>
+</html>
